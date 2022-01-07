@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CLEAR CACHE -->
+        <meta http-equiv="Expires" content="0"> 
+        <meta http-equiv="Last-Modified" content="0"> 
+        <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+
+        <meta name="description" content="">
+        <meta name="author" content="AURICOIN"> 
+
+        <!-- TITLE -->
+        <title>AURICOIN | Corporate</title>
+
+        <!-- BOOTSTRAP4 AND ANIMATE.CSS -->
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/lib/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/animate.css">
+
+        <!-- STYLES SHEET, SWEETALERT2, ERROR PAGE, FONT AWESOME AND FAVICON -->
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/lib/cryptoTicker/cryptoticker.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/general/sweet_alert.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/general/main.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/general/screen_loader.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/general/social_media_bar.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/general/navigation_bar.css">
+
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/lib/sweetalert2/sweetalert2.min.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/pages/error.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/font-awesome/all.min.css">
+
+        <!-- BOOSTRAP SELECT -->
+        <link rel="stylesheet" href="https://auricoin.org/assets/lib/bootstrap_select/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="https://auricoin.org/assets/lib/bootstrap_select/css/bootstrap-select-country.min.css">
+
+        <!-- BOOSTRAP DATETIMEPICKER -->
+        <link rel="stylesheet" href="https://auricoin.org/assets/lib/bootstrap_datepicker/css/bootstrap-datepicker.min.css">
+       
+        <link rel="shortcut icon" href="https://auricoin.org/assets/images/page/favicon.ico"/>
+
+        <!-- ANTI-CJK -->
+        <script type="text/javascript">
+            if ( top.location != location ) top.location = self.location;
+        </script>                
+
+        <!-- EXECUTE SCRIPT IN BROWSER MICROSOFT EXPLORER / EDGE -->
+        <script src="https://auricoin.org/assets/lib/es6-promise.auto.min.js"></script>
+        <link rel='stylesheet' href="https://auricoin.org/assets/css/general/flags/flags.css">
+
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/pages/corporate.css">
+
+        <!-- GOOGLE RECAPTCHA V2 INVISIBLE -->
+
+        <!-- GLOBAL SITE TAG (GTAG.JS) - GOOGLE ANALYTICS -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129894007-1"></script>
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'UA-129894007-1');		
+        </script>
+
+    </head>
+    
+    <body id="inicio">
+        <input type="hidden" name="baseUrl" id="baseUrl" value="https://auricoin.org/">
+        <input type="hidden" name="language" id="language" value="en">
+        <input type="hidden" name="languageView" id="languageView" value="english">
+        <div id="screen_loader">
+            <div class="container-fluid">
+                <div class="row loader_logo">
+                    <div class="col-12 text-center">
+                        <img src="https://auricoin.org/assets/images/page/nav_logo.png" alt="#" class="loader_logo_icon">
+                    </div>
+                    <div class="col-12 text-center" class="row_screen_loader_msg">
+                        <div class="screen_loader_msg_1">LOADING</div>
+                        <div class="screen_loader_msg_2 explore-btn animated fadeIn slower">
+						    <div class="screen_loader_msg_2 explore-btn animated fadeIn infinite slower"><span class='' id='close_screen_loader'>Is it taking too long to load?<br>Click here to close the loading screen</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        <div class="social-bar">
+            <a href="https://t.me/auricoin" class="icon icon-redes-background icon-telegram" target="_blank" title="TELEGRAM"></a>
+            <a href="https://www.facebook.com/Auricoin-English-113113090412946/?modal=admin_todo_tour" class="icon icon-redes-background icon-facebook" target="_blank" title="FACEBOOK"></a>
+            <a href="https://twitter.com/Auricoin" class="icon icon-redes-background icon-twitter" target="_blank" title="TWITTER"></a>
+            <a href="https://www.instagram.com/auricoinofficial/" class="icon icon-redes-background icon-instagram" target="_blank" title="INSTAGRAM"></a>
+            <a href="https://www.youtube.com/channel/UCFps56ukBTaxLpruJjejQxw" class="icon icon-redes-background icon-youtube" target="_blank" title="YOUTUBE"></a>
+        </div>
+
+        <div id="mainmenu-area" class="mainmenu-area " data-spy="affix" data-offset-top="75">
+            <section id="nav_section" class="nav_section"> 
+                <div class="container">
+                    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                        <!-- TOGGLER/COLLAPSIBE BUTTON -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- BRAND -->
+                        <a class="navbar-brand d-inline-block d-md-none" href="https://auricoin.org/">
+                            <img src="https://auricoin.org/assets/images/page/nav_logo.png" alt="#">
+                        </a>
+                        <!-- BRAND -->
+                        <div class="change_language flag_icon_mobile">
+                            <select class="selectpicker" data-width="fit" onchange="location = this.value;">
+                                <option selected value="https://auricoin.org/corporate" data-content='<span class="flag-icon flag-icon-gb"></span>'></option>
+                                <option  value="https://auricoin.org/es/corporativo" data-content='<span class="flag-icon flag-icon-es"></span>'></option>
+                            </select>
+                        </div>
+                        <!-- NAVBAR LINKS -->
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <div class="navbar-brand d-none d-sm-none d-md-block navbar-nav down-arrow1"><a class="logo-nav-menu" href="https://auricoin.org/"><img src="https://auricoin.org/assets/images/page/nav_logo.png" alt="#"></a></div>
+                            <ul class="navbar-nav">
+                                <li class="nav-item separation_links">
+                                    <a class="nav-link" href="https://auricoin.org/./" target="_self">HOME</a>
+                                </li>
+                                <li class="nav-item separation_links">
+                                    <a class="nav-link" href="https://auricoin.org/corporate" target="_self">CORPORATIVE</a>
+                                </li>
+                                <li class="nav-item separation_links">
+                                    <a class="nav-link" href="https://auricoin.org/credit/corporate" target="_self">CORPORATE CREDITS</a>
+                                </li>
+                                <li class="nav-item separation_links">
+                                    <a class="nav-link" href="https://auricoin.org/request/credits/corporate" target="_self">APPLICATION FOR CORPORATE CREDIT</a>
+                                </li>
+                                <li class="nav-item separation_links">
+                                    <a class="nav-link" href="https://auricoin.org/contact-us" target="_self">CONTACT US</a>
+                                </li>
+                            </ul>
+                            <div class="language_icon d-none d-sm-none d-md-block">
+                                <select class="selectpicker" data-width="fit" onchange="location = this.value;">
+                                    <option selected value="https://auricoin.org/corporate" data-content='<span class="flag-icon flag-icon-gb"></span>'></option>
+                                    <option  value="https://auricoin.org/es/corporativo" data-content='<span class="flag-icon flag-icon-es"></span>'></option>
+                                </select>
+                            </div>            
+                        </div>		  	
+                    </nav>
+                </div>
+            </section>
+        </div>    
+
+		<!-- BLOCK ONE -->
+        <div class="content_section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 p-0 bg_one_pc"><img class="overlay_bg_corporate" src="https://auricoin.org/assets/images/corporate/bg_one.jpg" alt="#"></div>
+					<div class="col-12 p-0 bg_one_mobile"><img class="overlay_bg_corporate" src="https://auricoin.org/assets/images/corporate/bg_one_mobile.jpg" alt="#"></div>
+				</div>
+			</div>
+			<header class="corporate_b_one">
+				<div class="container" >
+					<div class="row justify-content-center">
+						<div class="col_one col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+							<img src="https://auricoin.org/assets/images/page/nav_logo.png">
+						</div>
+						<div class="col_two col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                            
+        <h1>CORPORATE PORTFOLIO</h1>
+        <h2>AURICOIN</h2>
+        <p class="p_1">
+            Take your business through international barriers through our flexible range of Corporate Exchange solutions. 
+        </p>
+        <p class="p_2">
+            At <strong>AURICOIN</strong> we take your business needs seriously. &nbsp;Your financial growth and security are our top priorities.
+            &nbsp;As markets expand on a global scale, international trade is increasingly necessary to maximize profits and reduce costs.
+            &nbsp;While transactions with foreign companies may seem to enter unknown territory, you can rely on <strong>AURICOIN</strong> solutions and services that help minimize risks, accelerate revenue streams and rationalize business processes.     
+        </p>
+    						</div>
+					</div>	
+				</div>
+			</header>					
+		</div>
+		<!-- BLOCK TWO -->
+		<div class="content_section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 p-0 bg_two_pc"><img class="overlay_bg_corporate" src="https://auricoin.org/assets/images/corporate/bg_two.jpg" alt="#"></div>
+					<div class="col-12 p-0 bg_two_mobile"><img class="overlay_bg_corporate" src="https://auricoin.org/assets/images/corporate/bg_two_mobile.jpg" alt="#"></div>
+				</div>
+			</div>			
+			<section class="corporate_b_two">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col_one col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                            
+        <h1>Global solutions for</h1>
+        <h1>specific needs</h1>							
+        <p class="p_1" >
+            The world is your market. &nbsp;Whether you run a corporation or a financial institution, or if you are in the business of trade, import and export, we have it covered. &nbsp;Take your business beyond your horizons through our wide range of commercial solutions:
+        </p>
+        <div class="row justify-content-center row_disc_list_hr">
+            <div class="col-2 text-right">
+                <img src="https://auricoin.org/assets/images/corporate/disc_list.png" class="disc_list">
+            </div>							
+            <div class="col-10 text-left">
+                <hr class="hr">
+            </div>								
+        </div>
+        <h2>Exchange Guarantees</h2>
+        <p class="p_2" >
+            Your peace of mind matters, especially when your money crosses global borders. &nbsp;Protect your business from unexpected interruptions in international trade through bank guarantees of <strong>AURICOIN</strong> &nbsp;These can be your contingency measures in the event of sudden cash flow problems. &nbsp;It also guarantees that your losses are minimized in the event that your suppliers cannot comply with the terms of their transactions.
+        </p>
+        <h3>Contact an advisor: &nbsp;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e8aba7bab8a7baa9bcadbea1abadb8baadbba1acada6bca8a9bdbaa1aba7a1a6c6a7baaf">[email&#160;protected]</a></h3>
+        <div class="row justify-content-center row_disc_list_hr row_disc_list_hr_two">
+            <div class="col-2 text-right">
+                <img src="https://auricoin.org/assets/images/corporate/disc_list.png" class="disc_list">
+            </div>							
+            <div class="col-10 text-left">
+                <hr class="hr_one">
+            </div>								
+        </div>
+        <h2>Structured commercial financing solutions</h2>
+        <p class="p_2 p_3" >
+            Its flows of high value commodities deserve to be the main priority of the Structured Commercial Financing Department of <strong>AURICOIN</strong>. &nbsp;You can expect us to be there every step of the way, from the financing of the inventory to the process, as well as the application of pre-export financing. &nbsp;With easier access to financing terms, you can optimize and diversify your financing opportunities, while guaranteeing strategic acquisitions. 
+        </p>
+        <h3>Contact an advisor: &nbsp;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ecafa3bebca3beadb8a9baa5afa9bcbea9bfa5a8a9a2b8acadb9bea5afa3a5a2c2a3beab">[email&#160;protected]</a></h3>
+        <div class="row justify-content-center row_disc_list_hr row_disc_list_hr_two">
+            <div class="col-2 text-right">
+                <img src="https://auricoin.org/assets/images/corporate/disc_list.png" class="disc_list">
+            </div>							
+            <div class="col-10 text-left">
+                <hr class="hr_two">
+            </div>								
+        </div>
+        <h2>FORFAITING</h2>
+        <p class="p_2 p_4" >
+            High rewards demand high risks, but with our forfaiting services, you can minimize the risks involved in high value international business transactions. &nbsp;This will allow you to receive the payment immediately for accounts receivable in the medium term with a discount, without recourse to payment obligations.
+            <br>								  
+            <strong>AURICOIN</strong>, as a forfaiter, acts as an intermediate entity that buys accounts receivable. &nbsp;The importer will have to pay the forfaiter to claim the goods. &nbsp;This ensures a faster cash flow for its purpose, while eliminating the risk of default by the importer.
+        </p>
+        <h3>Contact an advisor: &nbsp;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="da9995888a95889b8e9f8c93999f8a889f89939e9f948e9a9b8f889399959394f495889d">[email&#160;protected]</a></h3>
+        <div class="row justify-content-center row_disc_list_hr row_disc_list_hr_two">
+            <div class="col-2 text-right">
+                <img src="https://auricoin.org/assets/images/corporate/disc_list.png" class="disc_list">
+            </div>							
+            <div class="col-10 text-left">
+                <hr class="hr_three">
+            </div>								
+        </div>							
+        <h2>Syndication</h2>
+        <p class="p_2 p_5" >
+            Some transactions and projects are too big to risk with a single entity. &nbsp;Through our syndication services, we can pool resources from several Exchange to share the risks involved in high-value transactions. &nbsp;This gives you access to a diverse set of resources adapted to different aspects of your business.
+        </p>
+        <h3>Contact an advisor: &nbsp;<a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="682b273a38273a293c2d3e212b2d383a2d3b212c2d263c28293d3a212b27212646273a2f">[email&#160;protected]</a></h3>
+    						</div>
+					</div>
+				</div>		
+			</section>						
+		</div>        
+        <!-- ---------------------------------------------------  JQUERY  --------------------------------------------------- -->
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/javascript" src="https://auricoin.org/assets/lib/jquery.min.js"></script>
+        
+        <!-- ------------------------------------------- POPPERJS AND BOOTSTRAP4 ------------------------------------------- -->
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/popper.min.js"></script>
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/bootstrap_select/js/bootstrap-select.min.js" ></script>
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/bootstrap_select/js/bootstrap-select-country.min.js" ></script>
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/bootstrap_select/js/i18n/defaults-es_ES.min.js" ></script>
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/bootstrap_datepicker/js/bootstrap-datepicker.min.js"></script>
+
+
+        <script type="text/javascript" charset="UTF-8" src="https://auricoin.org/assets/lib/bootstrap_datepicker/locales/bootstrap-datepicker.es.min.js"></script>
+
+
+        <!-- ------------------------------------------------- SWEETALERT2 ------------------------------------------------- -->
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/sweetalert2/sweetalert2.all.min.js"></script>	
+        
+ 
+
+        <!-- --------------------------------------------------  PAGEJS  -------------------------------------------------- -->
+        <script type="text/javascript" src="https://auricoin.org/assets/js/page.js"></script>
+
+
+    </body>
+
+</html>

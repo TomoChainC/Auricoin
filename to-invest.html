@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CLEAR CACHE -->
+        <meta http-equiv="Expires" content="0"> 
+        <meta http-equiv="Last-Modified" content="0"> 
+        <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+
+        <meta name="description" content="">
+        <meta name="author" content="AURICOIN"> 
+
+        <!-- TITLE -->
+        <title>AURICOIN | Investing</title>
+
+        <!-- BOOTSTRAP4 AND ANIMATE.CSS -->
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/lib/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/animate.css">
+
+        <!-- STYLES SHEET, SWEETALERT2, ERROR PAGE, FONT AWESOME AND FAVICON -->
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/lib/cryptoTicker/cryptoticker.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/general/sweet_alert.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/general/main.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/general/screen_loader.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/general/social_media_bar.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/general/navigation_bar.css">
+
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/lib/sweetalert2/sweetalert2.min.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/pages/error.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/font-awesome/all.min.css">
+
+        <!-- BOOSTRAP SELECT -->
+        <link rel="stylesheet" href="https://auricoin.org/assets/lib/bootstrap_select/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="https://auricoin.org/assets/lib/bootstrap_select/css/bootstrap-select-country.min.css">
+
+        <!-- BOOSTRAP DATETIMEPICKER -->
+        <link rel="stylesheet" href="https://auricoin.org/assets/lib/bootstrap_datepicker/css/bootstrap-datepicker.min.css">
+       
+        <link rel="shortcut icon" href="https://auricoin.org/assets/images/page/favicon.ico"/>
+
+        <!-- ANTI-CJK -->
+        <script type="text/javascript">
+            if ( top.location != location ) top.location = self.location;
+        </script>                
+
+        <!-- EXECUTE SCRIPT IN BROWSER MICROSOFT EXPLORER / EDGE -->
+        <script src="https://auricoin.org/assets/lib/es6-promise.auto.min.js"></script>
+        <link rel='stylesheet' href="https://auricoin.org/assets/css/general/flags/flags.css">
+
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/pages/investing.css">
+
+        <!-- GOOGLE RECAPTCHA V2 INVISIBLE -->
+
+        <!-- GLOBAL SITE TAG (GTAG.JS) - GOOGLE ANALYTICS -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129894007-1"></script>
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'UA-129894007-1');		
+        </script>
+
+    </head>
+    
+    <body id="inicio">
+        <input type="hidden" name="baseUrl" id="baseUrl" value="https://auricoin.org/">
+        <input type="hidden" name="language" id="language" value="en">
+        <input type="hidden" name="languageView" id="languageView" value="english">
+        <div id="screen_loader">
+            <div class="container-fluid">
+                <div class="row loader_logo">
+                    <div class="col-12 text-center">
+                        <img src="https://auricoin.org/assets/images/page/nav_logo.png" alt="#" class="loader_logo_icon">
+                    </div>
+                    <div class="col-12 text-center" class="row_screen_loader_msg">
+                        <div class="screen_loader_msg_1">LOADING</div>
+                        <div class="screen_loader_msg_2 explore-btn animated fadeIn slower">
+						    <div class="screen_loader_msg_2 explore-btn animated fadeIn infinite slower"><span class='' id='close_screen_loader'>Is it taking too long to load?<br>Click here to close the loading screen</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        <div class="social-bar">
+            <a href="https://t.me/auricoin" class="icon icon-redes-background icon-telegram" target="_blank" title="TELEGRAM"></a>
+            <a href="https://www.facebook.com/Auricoin-English-113113090412946/?modal=admin_todo_tour" class="icon icon-redes-background icon-facebook" target="_blank" title="FACEBOOK"></a>
+            <a href="https://twitter.com/Auricoin" class="icon icon-redes-background icon-twitter" target="_blank" title="TWITTER"></a>
+            <a href="https://www.instagram.com/auricoinofficial/" class="icon icon-redes-background icon-instagram" target="_blank" title="INSTAGRAM"></a>
+            <a href="https://www.youtube.com/channel/UCFps56ukBTaxLpruJjejQxw" class="icon icon-redes-background icon-youtube" target="_blank" title="YOUTUBE"></a>
+        </div>
+
+        <div id="mainmenu-area" class="mainmenu-area " data-spy="affix" data-offset-top="75">
+            <section id="nav_section" class="nav_section"> 
+                <div class="container">
+                    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                        <!-- TOGGLER/COLLAPSIBE BUTTON -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- BRAND -->
+                        <a class="navbar-brand d-inline-block d-md-none" href="https://auricoin.org/">
+                            <img src="https://auricoin.org/assets/images/page/nav_logo.png" alt="#">
+                        </a>
+                        <!-- BRAND -->
+                        <div class="change_language flag_icon_mobile">
+                            <select class="selectpicker" data-width="fit" onchange="location = this.value;">
+                                <option selected value="https://auricoin.org/to-invest" data-content='<span class="flag-icon flag-icon-gb"></span>'></option>
+                                <option  value="https://auricoin.org/es/invertir" data-content='<span class="flag-icon flag-icon-es"></span>'></option>
+                            </select>
+                        </div>
+                        <!-- NAVBAR LINKS -->
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <div class="navbar-brand d-none d-sm-none d-md-block navbar-nav down-arrow1"><a class="logo-nav-menu" href="https://auricoin.org/"><img src="https://auricoin.org/assets/images/page/nav_logo.png" alt="#"></a></div>
+                            <ul class="navbar-nav">
+                                <li class="nav-item separation_links">
+                                    <a class="nav-link" href="https://auricoin.org/./" target="_self">HOME</a>
+                                </li>
+                                <li class="nav-item separation_links">
+                                    <a class="nav-link" href="https://auricoin.org/to-invest" target="_self">INVESTING</a>
+                                </li>
+                                <li class="nav-item separation_links">
+                                    <a class="nav-link" href="https://auricoin.org/./assets/docs/whitepaper_en.pdf" target="_blank">WHITEPAPER</a>
+                                </li>
+                                <li class="nav-item separation_links">
+                                    <a class="nav-link" href="https://auricoin.org/contact-us" target="_self">CONTACT US</a>
+                                </li>
+                                <li class="nav-item separation_links">
+                                    <a class="nav-link" href="https://medium.com/auricoin" target="_blank">BLOG</a>
+                                </li>
+                            </ul>
+                            <div class="language_icon d-none d-sm-none d-md-block">
+                                <select class="selectpicker" data-width="fit" onchange="location = this.value;">
+                                    <option selected value="https://auricoin.org/to-invest" data-content='<span class="flag-icon flag-icon-gb"></span>'></option>
+                                    <option  value="https://auricoin.org/es/invertir" data-content='<span class="flag-icon flag-icon-es"></span>'></option>
+                                </select>
+                            </div>            
+                        </div>		  	
+                    </nav>
+                </div>
+            </section>
+        </div>    
+
+        <!-- BLOCK ONE -->
+		<div class="content_section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 p-0 bg_one_pc"><img class="overlay_bg_investing" src="https://auricoin.org/assets/images/investing/bg_one.jpg" alt="#"></div>
+					<div class="col-12 p-0 bg_one_mobile"><img class="overlay_bg_investing" src="https://auricoin.org/assets/images/investing/bg_one_mobile.jpg" alt="#"></div>
+				</div>
+			</div>
+			<header class="investing_b_one">
+				<div class="container" >
+					<div class="row justify-content-center">					
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                            
+        <h1>DO YOU WANT TO INVEST?</h1>
+        <h2><em>Invest in people or companies</em></h2>
+        <p>
+            <em>Acquire investment experience with only 1.125 <strong>AURICOIN</strong> (<strong>RIC</strong>), referential to   1,000.00 USD</em>
+        </p>
+        <hr>
+        <p>
+            <em>Choose who you give the credit to</em>
+        </p>
+        <hr>
+        <p class="p_3">
+            <em>Decide if the return you receive short, medium or long term</em>
+        </p>
+        <hr>
+        <p class="p_4"> 
+            <em>Interest is deposited in your wallet according to the regulations</em>
+        </p>
+        <hr>
+        <p>
+            <em>The agreements are registered in a smart contract, using Blockchain technology</em>
+        </p>
+    						</div>
+					</div>
+				</div>
+			</header>
+        </div>
+        <!-- BLOCK TWO -->
+		<div class="content_section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 p-0 bg_two_pc"><img class="overlay_bg_investing" src="https://auricoin.org/assets/images/investing/bg_two.jpg" alt="#"></div>
+					<div class="col-12 p-0 bg_two_mobile"><img class="overlay_bg_investing" src="https://auricoin.org/assets/images/investing/bg_two_mobile.jpg" alt="#"></div>
+				</div>
+			</div>
+			<section class="investing_b_two">
+				<div class="container">
+					<div class="row row_one justify-content-center">
+						<div class="col-12 text-center">
+                            
+        <h1>How does it work?</h1>
+        <h2>Analyze</h2>
+        <p class="p_1">
+            The information of registered applications to choose with which person or with which company you will invest.
+        </p>
+        <h2>Invest</h2>
+        <p class="p_2">
+            Choose how much you want to invest and the risk you are willing to take.  Collect interest and obtain the return of capital, according to the agreement you have defined with the applicant.
+        </p>
+        <h2>Need to</h2>
+        <p class="p_3">
+            Have the resources you are going to invest in your wallet.
+        </p>
+        <h2>Smart Contracts</h2>
+        <p class="p_4">
+            Order the smart contract that you have agreed with the borrower.
+        </p>
+    						</div>
+					</div>
+					<div class="row row_two justify-content-center">
+						<div class="col-12 text-center">
+                            
+        <h3>Are you ready to start?</h3>
+        <p>
+            Maximize your savings and invest them in people or companies directly and without intermediation. 
+        </p>
+    						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- BLOCK THREE -->
+		<div class="content_section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 p-0 bg_three_pc"><img class="overlay_bg_investing" src="https://auricoin.org/assets/images/investing/bg_three.jpg" alt="#"></div>
+					<div class="col-12 p-0 bg_three_mobile"><img class="overlay_bg_investing" src="https://auricoin.org/assets/images/investing/bg_three_mobile.jpg" alt="#"></div>
+				</div>
+			</div>			
+			<section class="investing_b_three">
+				<div class="container">
+					<div class="row row_one justify-content-center">
+						<div class="col_one col-12 text-left title">
+                             <h1>Requirements to invest</h1>																						
+						</div>
+						<div class="col_two col-12 text-left">
+                            
+        <p class="p_1">
+            <strong>AURICOIN</strong> offers you the option of supporting other people to achieve their dreams with their savings and, at the same time, obtain profitability.  Start now with only 1,125 <strong>AURICOIN</strong> (<strong>RIC</strong>), referential to $ 1,000.00 USD.
+            <br><br>
+            <strong>Pasos a seguir:</strong>
+            <ol>
+                <li value="1">Register with your e-mail and password on our page.</li>
+                <br class="d-none d-sm-none d-md-inline d-lg-inline">
+                <li value="2">Reliably fill in the investor profile on our platform.</li>
+                <br class="d-none d-sm-none d-md-inline d-lg-inline">
+                <li value="3">File an affidavit on the origin of the capital.</li>
+                <br class="d-none d-sm-none d-md-inline d-lg-inline">
+            </ol>
+            <em>Support the project of your preference, personal or productive</em>															
+        </p>	    
+    																																		
+						</div>						
+					</div>
+					<br>
+					<br class="d-none d-sm-none d-md-inline d-lg-inline">
+					<br class="d-none d-sm-none d-md-inline d-lg-inline">
+					<br class="d-none d-sm-none d-md-inline d-lg-inline">
+					<br class="d-none d-sm-none d-md-inline d-lg-inline">
+					<br class="d-none d-sm-none d-md-inline d-lg-inline">
+					<div class="row row_two justify-content-center">
+						<div class="col_one col-12 text-left title">
+                            <h1>Advantages</h1>																																		
+						</div>
+						<div class="col_two col-12 text-left">
+                            
+        <p class="p_2">
+            You do not need investment experience.
+            <br><br class="d-inline d-sm-none d-md-inline d-lg-inline">
+            The product of interest is available without restrictions.
+            <br><br class="d-inline d-sm-none d-md-inline d-lg-inline">
+            It starts with low capital requirements, begins to invest with only 1,125 <strong>AURICOIN</strong> (<strong>RIC</strong>), referential to $ 1,000.00 USD.
+            <br><br class="d-inline d-sm-none d-md-inline d-lg-inline">
+            The return is obtained in short, medium or long term, according to the conditions of the agreement with the borrower.
+            <br><br class="d-inline d-sm-none d-md-inline d-lg-inline">
+        </p>
+    																																			
+						</div>						
+					</div>
+					<br class="d-none d-sm-none d-md-inline d-lg-inline">
+					<br class="d-none d-sm-none d-md-inline d-lg-inline">
+					<br class="d-none d-sm-none d-md-inline d-lg-inline">
+					<br class="d-none d-sm-none d-md-inline d-lg-inline">
+					<br class="d-none d-sm-none d-md-inline d-lg-inline">
+					<br class="d-none d-sm-inline d-md-inline d-lg-inline">
+					<div class="row row_three justify-content-center">
+						<div class="col_one col-12 text-center">
+                            <h1>Together we generate<br class="d-inline d-sm-none d-md-inline d-lg-inline"> positive social impact</h1>																																	
+						</div>
+						<div class="col_two col-12 text-center">
+                            
+        <p class="p_3">
+            In <strong>AURICOIN</strong> we invite you to create an investment portfolio by type of application, identify with a cause and invest to help people improve their quality of life or undertake productive activities at reasonable costs.
+        </p>	
+    																												
+						</div>						
+					</div>					
+				</div>		
+			</section>						
+        </div>
+        <!-- BLOCK FOUR -->
+		<div class="content_section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 p-0 bg_four_pc"><img class="overlay_bg_investing" src="https://auricoin.org/assets/images/investing/bg_four.jpg" alt="#"></div>
+					<div class="col-12 p-0 bg_four_mobile"><img class="overlay_bg_investing" src="https://auricoin.org/assets/images/investing/bg_four_mobile.jpg" alt="#"></div>
+				</div>
+			</div>			
+			<section class="investing_b_four">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 text-left title">
+                            
+        <h1>Who or what</h1>
+        <h2>project to support?</h2>
+    						</div>
+						<div class="col-12 text-left">
+                            
+        <p class="p_1">
+            To facilitate the selection process at the time of investing, we study each person and company that registers on our platform and, according to the information provided, we assign a credit profile, from A + (lower risk) to E (higher risk).														
+        </p>
+    																																			
+						</div>						
+					</div>
+					<br class="d-none d-sm-none d-md-inline d-lg-inline">
+					<br class="d-none d-sm-none d-md-inline d-lg-inline">
+					<br class="d-none d-sm-none d-md-inline d-lg-inline">
+					<br class="d-none d-sm-none d-md-inline d-lg-inline">
+					<br class="d-none d-sm-inline d-md-inline d-lg-inline">
+					<br>
+					<div class="row justify-content-center">
+						<div class="col-12 text-left title">
+                            <h1>Risks</h1>						</div>
+						<div class="col-12 text-left">
+                            
+        <p class="p_2">
+            Investing in loans for other persons is an activity that involves a risk of uncollectibility, therefore, the return can yield positive or negative results, depending on the fulfillment of the payment of the loan, or the guarantee provided.
+            <br><br>
+            This does not mean in any way to ensure a certain profitability of the investments, it does not mean guarantee of performance on the part of <strong>AURICOIN</strong>, and it does not represent any promise to reach the yields that you have projected.
+        </p>    
+    																																			
+						</div>						
+					</div>
+                    <div class="col-12 text-left">
+                        <div class="btn explore-btn enlaces">
+                            INVEST HERE                        </div>
+                    </div>				
+				</div>		
+			</section>						
+        </div>
+        
+        <!-- ---------------------------------------------------  JQUERY  --------------------------------------------------- -->
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/jquery.min.js"></script>
+        
+        <!-- ------------------------------------------- POPPERJS AND BOOTSTRAP4 ------------------------------------------- -->
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/popper.min.js"></script>
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/bootstrap_select/js/bootstrap-select.min.js" ></script>
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/bootstrap_select/js/bootstrap-select-country.min.js" ></script>
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/bootstrap_select/js/i18n/defaults-es_ES.min.js" ></script>
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/bootstrap_datepicker/js/bootstrap-datepicker.min.js"></script>
+
+
+        <script type="text/javascript" charset="UTF-8" src="https://auricoin.org/assets/lib/bootstrap_datepicker/locales/bootstrap-datepicker.es.min.js"></script>
+
+
+        <!-- ------------------------------------------------- SWEETALERT2 ------------------------------------------------- -->
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/sweetalert2/sweetalert2.all.min.js"></script>	
+        
+ 
+
+        <!-- --------------------------------------------------  PAGEJS  -------------------------------------------------- -->
+        <script type="text/javascript" src="https://auricoin.org/assets/js/page.js"></script>
+
+
+    </body>
+
+</html>

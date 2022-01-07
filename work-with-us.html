@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CLEAR CACHE -->
+        <meta http-equiv="Expires" content="0"> 
+        <meta http-equiv="Last-Modified" content="0"> 
+        <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+        <meta http-equiv="Pragma" content="no-cache">
+
+        <meta name="description" content="">
+        <meta name="author" content="AURICOIN"> 
+
+        <!-- TITLE -->
+        <title>AURICOIN | Exchange</title>
+
+        <!-- BOOTSTRAP4 AND ANIMATE.CSS -->
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/lib/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/animate.css">
+
+        <!-- STYLES SHEET, SWEETALERT2, ERROR PAGE, FONT AWESOME AND FAVICON -->
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/lib/cryptoTicker/cryptoticker.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/general/sweet_alert.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/general/main.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/general/screen_loader.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/general/social_media_bar.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/general/navigation_bar.css">
+
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/lib/sweetalert2/sweetalert2.min.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/pages/error.css">
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/font-awesome/all.min.css">
+
+        <!-- BOOSTRAP SELECT -->
+        <link rel="stylesheet" href="https://auricoin.org/assets/lib/bootstrap_select/css/bootstrap-select.min.css">
+        <link rel="stylesheet" href="https://auricoin.org/assets/lib/bootstrap_select/css/bootstrap-select-country.min.css">
+
+        <!-- BOOSTRAP DATETIMEPICKER -->
+        <link rel="stylesheet" href="https://auricoin.org/assets/lib/bootstrap_datepicker/css/bootstrap-datepicker.min.css">
+       
+        <link rel="shortcut icon" href="https://auricoin.org/assets/images/page/favicon.ico"/>
+
+        <!-- ANTI-CJK -->
+        <script type="text/javascript">
+            if ( top.location != location ) top.location = self.location;
+        </script>                
+
+        <!-- EXECUTE SCRIPT IN BROWSER MICROSOFT EXPLORER / EDGE -->
+        <script src="https://auricoin.org/assets/lib/es6-promise.auto.min.js"></script>
+        <link rel='stylesheet' href="https://auricoin.org/assets/css/general/flags/flags.css">
+
+        <link rel="stylesheet" type="text/css" href="https://auricoin.org/assets/css/pages/work_with_us.css">
+
+        <!-- GOOGLE RECAPTCHA V2 INVISIBLE -->
+
+        <!-- GLOBAL SITE TAG (GTAG.JS) - GOOGLE ANALYTICS -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129894007-1"></script>
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'UA-129894007-1');		
+        </script>
+
+    </head>
+    
+    <body id="inicio">
+        <input type="hidden" name="baseUrl" id="baseUrl" value="https://auricoin.org/">
+        <input type="hidden" name="language" id="language" value="en">
+        <input type="hidden" name="languageView" id="languageView" value="english">
+        <div id="screen_loader">
+            <div class="container-fluid">
+                <div class="row loader_logo">
+                    <div class="col-12 text-center">
+                        <img src="https://auricoin.org/assets/images/page/nav_logo.png" alt="#" class="loader_logo_icon">
+                    </div>
+                    <div class="col-12 text-center" class="row_screen_loader_msg">
+                        <div class="screen_loader_msg_1">LOADING</div>
+                        <div class="screen_loader_msg_2 explore-btn animated fadeIn slower">
+						    <div class="screen_loader_msg_2 explore-btn animated fadeIn infinite slower"><span class='' id='close_screen_loader'>Is it taking too long to load?<br>Click here to close the loading screen</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        <div class="social-bar">
+            <a href="https://t.me/auricoin" class="icon icon-redes-background icon-telegram" target="_blank" title="TELEGRAM"></a>
+            <a href="https://www.facebook.com/Auricoin-English-113113090412946/?modal=admin_todo_tour" class="icon icon-redes-background icon-facebook" target="_blank" title="FACEBOOK"></a>
+            <a href="https://twitter.com/Auricoin" class="icon icon-redes-background icon-twitter" target="_blank" title="TWITTER"></a>
+            <a href="https://www.instagram.com/auricoinofficial/" class="icon icon-redes-background icon-instagram" target="_blank" title="INSTAGRAM"></a>
+            <a href="https://www.youtube.com/channel/UCFps56ukBTaxLpruJjejQxw" class="icon icon-redes-background icon-youtube" target="_blank" title="YOUTUBE"></a>
+        </div>
+
+        <div id="mainmenu-area" class="mainmenu-area " data-spy="affix" data-offset-top="75">
+            <section id="nav_section" class="nav_section"> 
+                <div class="container">
+                    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                        <!-- TOGGLER/COLLAPSIBE BUTTON -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- BRAND -->
+                        <a class="navbar-brand d-inline-block d-md-none" href="https://auricoin.org/">
+                            <img src="https://auricoin.org/assets/images/page/nav_logo.png" alt="#">
+                        </a>
+                        <!-- BRAND -->
+                        <div class="change_language flag_icon_mobile">
+                            <select class="selectpicker" data-width="fit" onchange="location = this.value;">
+                                <option selected value="https://auricoin.org/work-with-us" data-content='<span class="flag-icon flag-icon-gb"></span>'></option>
+                                <option  value="https://auricoin.org/es/trabaja-con-nosotros" data-content='<span class="flag-icon flag-icon-es"></span>'></option>
+                            </select>
+                        </div>
+                        <!-- NAVBAR LINKS -->
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <div class="navbar-brand d-none d-sm-none d-md-block navbar-nav down-arrow1"><a class="logo-nav-menu" href="https://auricoin.org/"><img src="https://auricoin.org/assets/images/page/nav_logo.png" alt="#"></a></div>
+                            <ul class="navbar-nav">
+                                <li class="nav-item separation_links">
+                                    <a class="nav-link" href="https://auricoin.org/./" target="_self">HOME</a>
+                                </li>
+                                <li class="nav-item separation_links">
+                                    <a class="nav-link" href="https://auricoin.org/work-with-us" target="_self">WORK WITH US</a>
+                                </li>
+                                <li class="nav-item separation_links">
+                                    <a class="nav-link" href="https://auricoin.org/work-with-us/executives" target="_self">EXECUTIVE</a>
+                                </li>
+                                <li class="nav-item separation_links">
+                                    <a class="nav-link" href="https://auricoin.org/work-with-us/dominusue" target="_self">DOMINUSUE</a>
+                                </li>
+                                <li class="nav-item separation_links">
+                                    <a class="nav-link" href="https://auricoin.org/work-with-us/ambassadors" target="_self">AMBASSADORS</a>
+                                </li>
+                                <li class="nav-item separation_links">
+                                    <a class="nav-link" href="https://auricoin.org/work-with-us/awards" target="_self">AWARDS</a>
+                                </li>
+                                <li class="nav-item separation_links">
+                                    <a class="nav-link" href="https://auricoin.org/contact-us" target="_self">CONTACT US</a>
+                                </li>
+                            </ul>
+                            <div class="language_icon d-none d-sm-none d-md-block">
+                                <select class="selectpicker" data-width="fit" onchange="location = this.value;">
+                                    <option selected value="https://auricoin.org/work-with-us" data-content='<span class="flag-icon flag-icon-gb"></span>'></option>
+                                    <option  value="https://auricoin.org/es/trabaja-con-nosotros" data-content='<span class="flag-icon flag-icon-es"></span>'></option>
+                                </select>
+                            </div>            
+                        </div>		  	
+                    </nav>
+                </div>
+            </section>
+        </div>    
+
+		<!-- BLOCK ONE -->
+		<div class="content_section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 p-0 bg_one_pc"><img class="overlay_bg_work_with_us" src="https://auricoin.org/assets/images/work_with_us/bg_one.jpg" alt="#"></div>
+					<div class="col-12 p-0 bg_one_mobile"><img class="overlay_bg_work_with_us" src="https://auricoin.org/assets/images/work_with_us/bg_one_mobile.jpg" alt="#"></div>
+				</div>
+			</div>
+			<header class="work_with_us_b_one">
+				<div class="container" >
+					<div class="row justify-content-center">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                            
+        <h2>JOIN AND LEAD THE NEW WORLD</h2>
+        <h1>ECONOMIC ORDER</h1>
+        <p>The participants will be chosen based on the knowledge of the services and products offered by the Exchange <strong>AURICOIN</strong>.</p>
+    						</div>
+					</div>
+				</div>
+			</header>
+        </div>
+		<!-- BLOCK TWO -->
+		<div class="content_section">
+			<section class="work_with_us_b_two">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                            
+        <p>
+            You have control over your own path to success and the flexibility to set your own schedule based on your needs and those of your family. &nbsp;Nevertheless, the true power of the Opportunity lies in being able to win by the results of your team, not only by your personal effort.
+        </p>
+    						</div>
+					</div>
+				</div>
+			</section>
+        </div>
+		<!-- BLOCK THREE -->
+		<div class="content_section">
+			<section class="work_with_us_b_three">
+				<div class="container-fluid" >
+					<div class="row justify-content-center">
+						<div class="col_one col-12 col-sm-12 col-md-6 col-lg-6">
+                            
+        <p>
+            Both you and your customers can have full confidence in the excellent quality of<strong>AURICOIN's</strong> financial services and products.
+            <br><br>
+            Experience is not indispensable, you will learn the necessary skills with our comprehensive training program and you will grow as a person with our online personal development seminars.
+        </p>
+    						</div>
+						<div class="col_two col-12 col-sm-12 col-md-6 col-lg-6">
+							<img src="https://auricoin.org/assets/images/work_with_us/img_b_three.jpg">
+						</div>
+					</div>
+				</div>
+			</section>
+        </div>
+		<!-- BLOCK FOUR -->
+		<div class="content_section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 p-0 bg_four_pc"><img class="overlay_bg_work_with_us" src="https://auricoin.org/assets/images/work_with_us/bg_four.jpg" alt="#"></div>
+					<div class="col-12 p-0 bg_four_mobile"><img class="overlay_bg_work_with_us" src="https://auricoin.org/assets/images/work_with_us/bg_four_mobile.jpg" alt="#"></div>
+				</div>
+			</div>
+			<section class="work_with_us_b_four">
+				<div class="container" >
+					<div class="row justify-content-center">
+						<div class="col-12 col-sm-12 col-md-9 col-lg-9 offset-md-3 offset-lg-3 text-center">
+                            
+        <h3>GET EXCELLENT WORK</h3>
+        <h1>TOOLS</h1>
+        <p><strong>AURICOIN</strong> offers an opportunity with your own effort to win</p>
+        <h2>CARS, TRAVEL, PÓDIUM, LAPTOPS, MOBILE TELEPHONES AND CLOTHING BY YOUNG DESIGNER LUISA ELENA ZANETTI.</h2>
+        <div class="d-block d-sm-none d-md-none d-lg-none rewars_b_four">
+            <h2>WE REWARD YOUR <BR> WORK AND DEDICATION.</h2>
+            <p>
+                In <strong>AURICOIN</strong> you will find your ideal job to develop both professionally and intellectually.
+            </p>
+        </div>				    
+    						</div>
+					</div>
+				</div>
+			</section>
+        </div>
+		<!-- BLOCK FIVE -->
+		<div class="content_section">
+			<section class="work_with_us_b_five">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                            
+        <div class="rewars_b_five">
+            <h2>WE REWARD YOUR WORK AND DEDICATION.</h2>
+            <p>
+                In <strong>AURICOIN</strong> you will find your ideal job to develop both professionally and intellectually.
+            </p>
+        </div>
+        <h1>HAVE THE MONEY YOU WANT</h1>
+        <p>
+            The business plan of <strong>AURICOIN</strong> offers you an exceptional profit opportunity. <br clear="d-inline d-sm-none d-md-none d-lg-none"><br clear="d-inline d-sm-none d-md-none d-lg-none"> Who wants to really change their life, is in the right place to achieve it.
+        </p>
+    						</div>
+					</div>
+				</div>		
+			</section>						
+        </div>
+		<!-- BLOCK SIX -->
+		<div class="content_section">
+			<div class="container-fluid">
+				<div class="row">
+                    <div class="col-12 p-0 bg_six_pc"><img class="overlay_bg_work_with_us" src="https://auricoin.org/assets/images/work_with_us/bg_six.jpg" alt="#"></div>
+					<div class="col-12 p-0 bg_six_mobile"><img class="overlay_bg_work_with_us" src="https://auricoin.org/assets/images/work_with_us/bg_six_mobile.jpg" alt="#"></div>
+				</div>
+			</div>
+			<section class="work_with_us_b_six">
+				<div class="container">
+					<div class="row row_one justify-content-left">
+                        <div class="col-12 col-sm-12 col-md-9 col-lg-9 text-left">
+                            
+        <h1>PERSONAL DEVELOPMENT</h1>
+        <p>
+            Learn the skills necessary to succeed with our comprehensive online training programs. &nbsp;When you achieve new goals with <strong>AURICOIN</strong> you will automatically reach new levels, each with a greater potential for profit. &nbsp;No one will stop you, the limit is set by you.
+        </p>    
+                            </div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<hr class="d-block d-sm-none d-md-none d-lg-none">
+				</div>
+				<div class="container" >
+					<div class="row row_two justify-content-left">						
+                        <div class="col-12 col-sm-12 col-md-9 col-lg-9 text-left">
+                            
+        <h1>GROW AS A HUMAN BEING</h1>
+        <p>
+            <strong>AURICOIN</strong> is a university of life. &nbsp;It is a people business, by meeting and sharing with others, with the help of our personal development programs, you will learn and grow. &nbsp;You will gain more confidence in yourself and you will feel better about what you do. &nbsp;Your life will change in a way that you did not anticipate.
+        </p>    
+                            </div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<hr class="d-block d-sm-none d-md-none d-lg-none">
+				</div>
+				<div class="container" >
+					<div class="row row_three justify-content-left">
+                        <div class="col-12 col-sm-12 col-md-9 col-lg-9 text-left">
+                            
+        <h1>KNOW THE WORLD</h1>
+        <p>
+            If you love to travel, <strong>AURICOIN</strong> is your ideal place. &nbsp;We offer fantastic trips to dreamed places for all the people that stand out developing their businesses
+        </p>    
+                            </div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<hr class="d-block d-sm-none d-md-none d-lg-none">
+				</div>
+				<div class="container" >
+					<div class="row row_four justify-content-left">
+                        <div class="col-12 col-sm-12 col-md-9 col-lg-9 text-left">
+                            
+        <h1>BE REWARDED</h1>
+        <p>
+            It always comforts to be recognized for our success and nobody does it better than  <strong>AURICOIN</strong>. &nbsp;With appreciation of your achievements, ¡<strong>AURICOIN</strong> has a unique recognition program to reward you for having achieved the goals you have set yourself!
+        </p>    
+                            </div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<hr class="d-block d-sm-none d-md-none d-lg-none">
+				</div>
+				<div class="container" >
+					<div class="row row_five justify-content-left">
+                        <div class="col-12 col-sm-12 col-md-9 col-lg-9 text-left">
+                            
+        <h1>HELP OTHERS</h1>
+        <p>
+            The goal of <strong>AURICOIN</strong> is to help others to obtain a better quality of life. &nbsp;When you offer the spectacular services and financial products of <strong>AURICOIN</strong>, it will help the development of all humanity, it is the best reward that any human being can experience.
+        </p>    
+                            </div>
+						<div class="col-12 col-sm-12 col-md-3 col-lg-3"></div>
+					</div>
+				</div>
+			</section>
+		</div>		        
+        <!-- ---------------------------------------------------  JQUERY  --------------------------------------------------- -->
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/jquery.min.js"></script>
+        
+        <!-- ------------------------------------------- POPPERJS AND BOOTSTRAP4 ------------------------------------------- -->
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/popper.min.js"></script>
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/bootstrap/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/bootstrap_select/js/bootstrap-select.min.js" ></script>
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/bootstrap_select/js/bootstrap-select-country.min.js" ></script>
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/bootstrap_select/js/i18n/defaults-es_ES.min.js" ></script>
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/bootstrap_datepicker/js/bootstrap-datepicker.min.js"></script>
+
+
+        <script type="text/javascript" charset="UTF-8" src="https://auricoin.org/assets/lib/bootstrap_datepicker/locales/bootstrap-datepicker.es.min.js"></script>
+
+
+        <!-- ------------------------------------------------- SWEETALERT2 ------------------------------------------------- -->
+        <script type="text/javascript" src="https://auricoin.org/assets/lib/sweetalert2/sweetalert2.all.min.js"></script>	
+        
+ 
+
+        <!-- --------------------------------------------------  PAGEJS  -------------------------------------------------- -->
+        <script type="text/javascript" src="https://auricoin.org/assets/js/page.js"></script>
+
+
+    </body>
+
+</html>
